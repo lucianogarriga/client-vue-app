@@ -1,6 +1,6 @@
 <template>
   <img alt="Hello World" src="./assets/helloworld.png">
-  <HelloWorld msg="Hola Mundo, mi primera App Vue 3"/>
+  <HelloWorld msg="Mi primera App Vue 3" name="Luciano Martin"/>
 </template>
 
 <script>
@@ -22,5 +22,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img{
+  width: 30%;
 }
 </style>

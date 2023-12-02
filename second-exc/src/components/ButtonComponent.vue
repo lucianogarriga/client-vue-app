@@ -1,6 +1,6 @@
 <template>
   <div id="button">
-    <a :href="url" target="_blank" class="button-p">Ir al sitio oficial</a>
+    <a :href="url" target="_blank" class="button-p">Ir al sitio</a>
   </div>
 </template>
 

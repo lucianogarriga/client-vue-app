@@ -7,27 +7,26 @@
   <div class="container">
     <h2>Proyecto Vue-Router</h2>
     <p class="subtitle">Utilización de tecnolog&iacute;as como:</p>
-    <ul v-for="(item, index) in tech" :key="index">
-      <p>- {{item}}</p>
-    </ul>
-    <hr><br>
-    
+    <p v-for="(item, index) in tech" :key="index">- {{ item }}</p>
+    <br />
+    <hr />
+
     <p class="subtitle">Utilización de directivas como:</p>
-    <ul v-for="(item, index) in directivas" :key="index">
-      <p>- {{item}}</p> 
-    </ul>
+    <p v-for="(item, index) in directivas" :key="index">
+      {{ item }}
+    </p>
   </div>
 </template>
 
 <script>
 export default {
   name: "InicioView",
-  data(){
-    return{
-      tech: ['Rutas', 'Router-link', 'Rarámetros de URL', 'Rutas Dinámicas'],
-      directivas: ['v-for','v-if']
-    }
-  }
+  data() {
+    return {
+      tech: ["Rutas", "Router-link", "Rarámetros de URL", "Rutas Dinámicas", "404 Error Page"],
+      directivas: ["v-for", "v-if"],
+    };
+  },
 };
 </script>
 
@@ -38,15 +37,15 @@ img {
   padding: 20px;
   margin-top: 25px;
 }
-.container{
+.container {
   margin: auto;
   width: 80%;
-  max-width: 550px; 
+  max-width: 550px;
   border: 2px solid salmon;
   border-radius: 10px;
   margin-bottom: 40px;
 }
-.subtitle{
+.subtitle {
   color: darkblue;
   font-size: 18px;
   font-weight: 600;

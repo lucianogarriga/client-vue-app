@@ -1,16 +1,24 @@
 <template>
-  <h1>Lista de Animales</h1>
-  <h3>Desarrollo del ciclo de vida de componentes en Vue</h3>
-  <div class="card">
-    <h3>Nuevo Animal</h3>
-    <input type="text" placeholder="Escriba un animal" v-model="nuevoAnimal" />
+  <div class="container">
+    <h1 class="title">Lista de Animales</h1>
+    <h3 class="subtitle">Desarrollo del Ciclo de Vida (Life Cycle) de componentes en Vue.js</h3>
+    <div class="card">
+      <h3>Nuevo Animal</h3>
+      <input
+        type="text"
+        placeholder="Escriba un animal"
+        v-model="nuevoAnimal"
+      />
+      <br />
+      <button id="btnAdd">Agregar</button>
+    </div>
     <br />
-    <button id="btnAdd">Agregar</button>
-  </div>
-  <br />
-  <div class="card">
-    <h4>Animales</h4>
-    <p v-for="(animal, index) in animales" :key="index">{{ animal }} <button class="delete" @click="eliminarAnimal"> X </button></p>
+    <div class="card">
+      <h4>Animales</h4>
+      <p v-for="(animal, index) in animales" :key="index">
+        {{ animal }} <button class="delete" @click="eliminarAnimal">X</button>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -77,12 +85,19 @@ export default {
 .card {
   border: 1px solid yellowgreen;
   border-radius: 10px;
-  margin: auto; 
+  margin: auto;
   width: 280px;
   padding: 10px;
 }
+.title{
+  margin-top: 28px;
+}
+.subtitle{
+  margin: 18px;
+}
 #btnAdd {
-  border: 1px solid darkolivegreen;
+  border: 2px solid black;
+  font-weight: 700;
   width: 180px;
   padding: 10px;
   margin: 20px 0px;
@@ -90,16 +105,22 @@ export default {
   border-radius: 10px;
   color: black;
 }
-.delete{
+#btnAdd:hover {
+  background-color: rgb(4, 80, 4);
+  color: azure;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.delete {
   background-color: rgb(205, 15, 15);
   color: azure;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
   padding: 4px;
   margin: 4px;
 }
-.delete:hover{
+.delete:hover {
   background-color: rgb(101, 6, 6);
-  transition: .2s;
+  transition: 0.2s;
 }
 </style>

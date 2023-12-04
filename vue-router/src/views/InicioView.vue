@@ -4,6 +4,8 @@
     alt="logo"
   />
   <h1>Bienvenido</h1>
+  <button @click="nosotros" class="gohome" >Ir a Nosotros</button>
+  <button @click="carreras" class="gohome">Ir a Carreras</button>
   <div class="container">
     <h2>Proyecto Vue-Router</h2>
     <p class="subtitle">Utilización de tecnolog&iacute;as como:</p>
@@ -21,9 +23,23 @@
 <script>
 export default {
   name: "InicioView",
+  methods:{
+    nosotros(){
+      this.$router.push('/nosotros')
+    },
+    carreras(){
+      this.$router.push('/carreras')
+    }
+  },
   data() {
     return {
-      tech: ["Rutas", "Router-link", "Rarámetros de URL", "Rutas Dinámicas", "404 Error Page"],
+      tech: [
+        "Rutas",
+        "Router-link",
+        "Rarámetros de URL",
+        "Rutas Dinámicas",
+        "404 Error Page",
+      ],
       directivas: ["v-for", "v-if"],
     };
   },
@@ -44,6 +60,7 @@ img {
   border: 2px solid salmon;
   border-radius: 10px;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 .subtitle {
   color: darkblue;

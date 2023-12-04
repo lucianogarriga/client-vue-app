@@ -21,6 +21,7 @@ export default {
     height: 35px;
     border-radius: 10px;
     color: aliceblue;
+    margin: 10px;
 }
 .gohome:hover{
     background: rgb(208, 91, 99);

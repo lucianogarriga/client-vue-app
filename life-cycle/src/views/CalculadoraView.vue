@@ -38,7 +38,7 @@
 
     <br />
     <div class="respuesta">
-      <h4>Respuesta: {{ resultado }}</h4>
+      <h3>Respuesta: {{ resultado }}</h3>
     </div>
   </div>
 </template>
@@ -107,12 +107,13 @@ export default {
   margin: auto;
   width: 280px;
   padding: 10px;
-} 
+}  
 button {
   border: 2px solid black;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 16px;
   background-color: yellowgreen;
   color: black;
   font-weight: 700;

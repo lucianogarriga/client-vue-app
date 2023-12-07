@@ -48,23 +48,13 @@
 </template>
 
 <script>
-import AppBarVue from "./components/AppBar.vue";
-// import AlertViewVue from "./views/AlertView.vue";
-// import CardViewVue from "./views/CardView.vue";
-// import FormViewVue from "./views/FormView.vue";
-// import TableViewVue from "./views/TableView.vue";
-// import TabsViewVue from "./views/TabsView.vue";
+import AppBarVue from "./components/AppBar.vue"; 
 
 export default {
   name: "App",
 
   components: {
-    AppBarVue,
-    // AlertViewVue,
-    // CardViewVue,
-    // FormViewVue,
-    // TableViewVue,
-    // TabsViewVue,
+    AppBarVue, 
   },
 };
 </script>

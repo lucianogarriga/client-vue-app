@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
+.v-container{
+  max-width: 890px;
+}
 </style>

@@ -25,7 +25,7 @@
           <v-card-item>
             <div>
               <div class="text-overline mb-1">Card with variant "Tonal"</div>
-              <div class="text-h6 mb-1">Forma 3 de trabajar con Cards</div>
+              <div class="text-h6 mb-1">Creando cards con Prop 'variant' - P. 1</div>
               <div class="text-caption">
                 Greyhound divisely hello coldly fonwderfully
               </div>
@@ -47,7 +47,7 @@
           <v-card-item>
             <div>
               <div class="text-overline mb-1">Variante</div>
-              <div class="text-h6 mb-1">Headline</div>
+              <div class="text-h6 mb-1">Creando cards con Prop 'variant' - P. 2</div>
               <div class="text-caption">
                 Greyhound divisely hello coldly fonwderfully
               </div>

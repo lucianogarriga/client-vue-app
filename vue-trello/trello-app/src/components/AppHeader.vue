@@ -1,15 +1,44 @@
 <template>
-    <div>
-        <h2>AppHeader</h2>
-    </div>
+  <header>
+    <span class="title">Vue Trello</span>
+    <router-link to="/" class="btn-header">Mis paneles</router-link>
+  </header>
 </template>
 
 <script>
 export default {
-    name: 'AppHeader'
-}
+  name: "AppHeader",
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+header {
+  background-color: #607d8b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 1rem;
 
+  .title {
+    align-self: center;
+    color: #eceff1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}
+.btn-header{
+    background-color: #455A64;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
+    0 2px 5px 0 rgba(49,49,03,.1),
+    0 1px 2px 0 rgba(0,0,0,.08);
+    color: #B0BeC5;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
 </style>

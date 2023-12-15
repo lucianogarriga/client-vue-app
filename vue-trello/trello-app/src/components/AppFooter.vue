@@ -14,6 +14,8 @@ export default {
 footer{
     box-sizing: border-box;
     background-color: #cfd8dc;
+    color: #545454;
+    font-weight: 500;
     bottom: 0;
     left: 0;
     padding: 1rem;

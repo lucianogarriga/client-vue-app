@@ -1,6 +1,6 @@
 <template>
   <header></header>
-  <h1>App View</h1>
+  <h1 class="title">App View</h1>
   <AppHeader/>
   <AppFooter/>
   <router-view class="container"></router-view>
@@ -23,6 +23,9 @@ export default {
 <style>
 .container {
   margin: 2rem;
+}
+.title{
+  margin: 10px;
 }
 header {
   line-height: 1.5;

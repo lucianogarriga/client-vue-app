@@ -1,7 +1,7 @@
 <template>
   <header></header>
-  <h1 class="title">App View</h1>
   <AppHeader/>
+  <h1 class="title">App View</h1>
   <AppFooter/>
   <router-view class="container"></router-view>
   <footer></footer>

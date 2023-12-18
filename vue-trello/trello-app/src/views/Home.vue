@@ -10,10 +10,11 @@
             >
 
             <!-- Listado de paneles -->
-            <BoardCard v-for="(board,i) in boards" 
+            <BoardCard 
+            v-for="(board,i) in boards" 
             :key="i"
             :name="board.name"
-            :id="board.id"
+            :id="board.id.toString()"
             > 
             </BoardCard>
         </div>

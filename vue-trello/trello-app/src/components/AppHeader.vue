@@ -37,8 +37,8 @@ header {
     0 1px 2px 0 rgba(0,0,0,.08);
     color: #B0BeC5;
     cursor: pointer;
-    text-decoration: none;
-    padding: 0.5rem;
+    text-decoration: none; 
+    padding: 0.8rem;
     margin: 0 0.5rem;
 }
 </style>

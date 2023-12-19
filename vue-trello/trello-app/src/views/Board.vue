@@ -36,7 +36,8 @@ export default {
     return{
         listName: '',
         boardList: [
-            {id: 1, name: 'Lista 1'}
+            {id: '1', name: 'Lista 1'}, 
+            {id: '2', name: 'Lista 2'}
         ]
     }
   },

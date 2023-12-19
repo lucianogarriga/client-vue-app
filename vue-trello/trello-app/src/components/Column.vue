@@ -3,19 +3,34 @@
     <header>
       <h3>{{ name }}</h3>
     </header>
-    <div>...</div>
+    <TaskList
+      :listId="listId"
+      :tasks="tasksList"
+    >
+
+    </TaskList>
   </section>
 </template>
 
 <script>
+import TaskList from './TaskList.vue';
+
 export default {
   name: "Column",
-  data() {
-    return {};
+  components:{
+    TaskList
   },
   props: {
     name: String,
     listId: String,
+  },
+  data() {
+    return {
+      tasksList: [
+        {id: '1', title: 'Aprender Vue', completed: false},
+        {id: '2', title: 'Aprender VueX', completed: false}
+      ]
+    };
   },
 };
 </script>
@@ -23,8 +38,7 @@ export default {
 <style lang="scss" scoped>
 section {
   background-color: #579aaaa6;
-  box-shadow: 0 0 0 0.5px rgba(49, 49, 93, 0.03),
-  0 2px 5px 0,
+  box-shadow: 0 0 0 0.5px rgba(49, 49, 93, 0.03), 
   0 1px 2px 0;
   box-sizing: border-box;
   border-radius: 3px;

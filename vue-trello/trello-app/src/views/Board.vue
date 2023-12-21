@@ -8,43 +8,42 @@
       @keyup.enter="add()"
     />
     <div class="container">
-        <column
-            v-for="(list,i) in boardList" 
-            :key="i" 
-            :listId="list.id"
-            :name="list.name"
-        >
-        </column>
+      <column
+        v-for="(list, i) in boardList"
+        :key="i"
+        :listId="list.id"
+        :name="list.name"
+      >
+      </column>
     </div>
   </section>
 </template>
 
 
 <script>
-import Column from '@/components/Column.vue';
+import Column from "@/components/Column.vue";
 
 export default {
   name: "BoardView",
   components: {
-    Column
+    Column,
   },
   props: {
     name: String,
     id: String,
   },
-  data(){
-    return{
-        listName: '',
-        boardList: [
-            {id: '1', name: 'Lista 1'}, 
-            {id: '2', name: 'Lista 2'}
-        ]
-    }
+  data() {
+    return {
+      listName: "",
+      boardList: [
+        { id: "1", name: "Lista 1" } 
+      ],
+    };
   },
   methods: {
-    add(){
-        this.boardList.push({name: this.listName})
-    }
+    add() {
+      this.boardList.push({ name: this.listName });
+    },
   },
 };
 </script>
@@ -54,7 +53,9 @@ export default {
 section {
   text-align: center;
 }
-
+.container {
+  margin-bottom: 4rem;
+}
 h3 {
   color: #37474f;
   text-align: left;

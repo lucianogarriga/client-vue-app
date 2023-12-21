@@ -27,8 +27,7 @@ export default {
   data() {
     return {
       tasksList: [
-        {id: '1', title: 'Aprender Vue', completed: false},
-        {id: '2', title: 'Aprender VueX', completed: false}
+        {id: '1', title: 'Aprender Vue', completed: false} 
       ]
     };
   },
@@ -42,10 +41,10 @@ section {
   0 1px 2px 0;
   box-sizing: border-box;
   border-radius: 3px;
-  color: white;
-  margin: 1rem;
+  color: white; 
   padding: 1rem; 
   width: 100%;  
+  margin: 0 auto; 
   @media screen and (min-width: 600px) {
     width: calc(50% - 2rem - 2px);
   }

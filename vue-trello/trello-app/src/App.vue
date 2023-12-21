@@ -1,10 +1,10 @@
-<template>
-  <header></header>
+<template> 
   <AppHeader/>
   <h1 class="title">App View</h1>
+
+  <router-view class="container"></router-view> 
+  
   <AppFooter/>
-  <router-view class="container"></router-view>
-  <footer></footer>
 </template>
 
 <script>
@@ -26,22 +26,5 @@ export default {
 }
 .title{
   margin: 10px;
-}
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+}  
 </style>

@@ -3,6 +3,10 @@ import Vuex from 'vuex'
 import {createLogger} from  'vuex';
 
 import state from './state'
+    // Las ACTIONS son las encargadas de hacer peticiones asincronas
+    // P/ que se actualice el estado de FIREBASE, y ya no solo local
+    // Y notificar a la STORE mediante las MUTATIONS
+import mutations from './mutations'
 
 const debug = process.env.NODE_ENV !== 'production'
 
@@ -12,6 +16,6 @@ export default new Vuex.Store({
     state,
     getters:{},
     actions: {},
-    mutations: {}
+    mutations: mutations
 })
 

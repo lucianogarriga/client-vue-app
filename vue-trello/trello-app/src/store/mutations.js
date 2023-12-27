@@ -1,6 +1,7 @@
 // import Vue from 'vue'
 import * as types from './mutations-types'
 
+// LAS MUTACIONES SON LAS QUE CAMBIAN EL ESTADO
 export default {
     // Fetch de Paneles creados por el user
     // Todas las mutaciones reciben el Estado y un Payload
@@ -31,7 +32,7 @@ export default {
     },
 
     // Destructuring del boards
-    [types.FETCH_LISTS_SUCCESS](state, { lists}){
+    [types.FETCH_LISTS_SUCCESS](state, {lists}){
         state.fetchingData = false
         state.error = null
         // Traemos los anteriores y sumamos el nuevo

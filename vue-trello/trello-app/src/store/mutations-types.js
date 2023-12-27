@@ -1,6 +1,9 @@
 // TIPOS DE MUTACION
+// Cambian el estado a traves de eventos que emitamos en la App
 
 // ASINCRONAS
+// Todas las peticiones async deben tener 3 tipos de mutacion
+// 1 - llamada / 2 - resultado exitoso / 3 - Rdo con error
 
 export const FETCH_BOARDS_REQUEST = 'FETCH_BOARDS_REQUEST'
 export const FETCH_BOARDS_SUCCESS = 'FETCH_BOARDS_SUCCESS'
